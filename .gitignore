@@ -1,0 +1,28 @@
+# File sistem (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Log file
+*.log
+
+# Node.js (kalau kamu pakai tooling/npm, bisa diabaikan kalau tidak pakai)
+node_modules/
+npm-debug.log
+
+# Folder build (jika kamu buat versi zip atau minify nantinya)
+dist/
+build/
+out/
+
+# Temporary file dari editor
+*.swp
+*.tmp
+*.bak
+*~
+
+# VS Code config (opsional)
+.vscode/
+
+# ZIP hasil export ekstensi (misal untuk upload ke Chrome Web Store)
+*.zip
+

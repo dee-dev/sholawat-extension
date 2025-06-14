@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sholawat Otomatis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      width: 300px;
+      height: auto;
+      max-height: 400px;
+      overflow-y: auto;
+      font-family: system-ui, "Segoe UI", Arial, "Noto Sans Arabic", sans-serif;
+    }
+  </style>
+</head>
+<body class="p-4 text-sm bg-white text-gray-800">
+  <div class="flex items-center gap-2 text-lg font-bold mb-2">
+    <img src="icons/icon48.png" alt="icon" class="w-6 h-6">
+    <span>Sholawat Otomatis</span>
+  </div>
+
+  <div id="status" class="mt-1 mb-3 text-sm font-medium"></div>
+
+  <button id="manualBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded w-full transition">
+    🔧 Mode Manual
+  </button>
+
+  <label class="block mt-4 text-sm">
+    <input type="checkbox" id="autoEnable" class="mr-2">
+    Aktifkan otomatis di situs ini
+  </label>
+
+  <details class="mt-4">
+    <summary class="cursor-pointer font-medium">❓ Cara Pakai</summary>
+    <ul class="list-disc ml-5 mt-2 text-xs text-gray-700 space-y-1">
+      <li>Ketikan nama Nabi (Muhammad, Rasulullah) → otomatis <span class="font-bold text-black">ﷺ</span></li>
+      <li>Ketikan lafadz Allah → otomatis <span class="font-bold text-black">ﷻ</span></li>
+      <li>Gunakan Mode Manual jika tidak aktif otomatis</li>
+    </ul>
+  </details>
+
+  <footer class="mt-5 text-xs text-gray-400 text-center">v1.0 by kamu 😎</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
